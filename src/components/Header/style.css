@@ -21,6 +21,10 @@ header {
 .header--dox2 div:hover {
   border-bottom: 4px solid blue;
 }
+.header--dox2 div:hover svg {
+  fill: blue;
+}
+
 .box-input {
   position: relative;
 }
@@ -43,7 +47,7 @@ input {
   display: flex;
 }
 .div_ox {
-    margin-left: 10px;
+  margin-left: 10px;
   width: 40px;
   height: 40px;
   background: #e4e6eb;
