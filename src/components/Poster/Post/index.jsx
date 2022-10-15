@@ -1,10 +1,8 @@
 import React from "react";
-import GlobeIcon from "./GlobeIcon";
-import ThreeDotsIcon from "./ThreeDotsIcon";
+import GlobeIcon from "../GlobeIcon";
+import ThreeDotsIcon from "../ThreeDotsIcon";
 
-import "./style.css";
-
-const Poster = () => {
+const Post = () => {
   return (
     <div className="poster--box">
       <div className="post--header">
@@ -18,7 +16,7 @@ const Poster = () => {
             <div>
               <div>Civic.am</div>
               <div>
-                30 июнь 2021 г. <GlobeIcon />
+                1 сентябрь 2021 г. <GlobeIcon />
               </div>
             </div>
           </div>
@@ -29,17 +27,14 @@ const Poster = () => {
           </div>
         </div>
       </div>
-      <p>
-        ԱՄՆ-ն չեղյալ է հայտարարել դիվանագիտական այցը՝ դեպի Չինաստան՝ ակնկալվող
-        բարձրաստիճան հանդիպման մերժումից հետո
-      </p>
-      <img src="https://external.fevn11-1.fna.fbcdn.net/emg1/v/t13/7770111784586356116?url=https%3A%2F%2Fcivic.am%2Fuploads%2Fposts%2F2021-07%2F1626697336_1.jpg&fb_obo=1&utld=civic.am&stp=c0.5000x0.5000f_dst-jpg_flffffff_p852x444_q75&ccb=13-1&oh=06_AapdZly4DRaED-ebj0lN0noeCw0J9VSxE55NpSBOZhC86g&oe=634C002B&_nc_sid=7ca135" />
+      <p>Շիրակի մարզը միանում է «իԳործ» ծրագրին</p>
+      <img src="https://external.fevn11-1.fna.fbcdn.net/emg1/v/t13/4795357778944474132?url=https%3A%2F%2Fcivic.am%2Fuploads%2Fposts%2F2021-08%2F1630436852_241145257_2970153593243839_5519482623161601258_n.jpeg&fb_obo=1&utld=civic.am&stp=c0.5000x0.5000f_dst-jpg_flffffff_p786x410_q75&ccb=13-1&oh=06_AapcWKJYXG7_0PgtEIgwgu5hj5addZ6zKmkZwnsQqCEm-g&oe=634C7827&_nc_sid=7ca135" />
       <div className="a">
         <h4 style={{ padding: "6px 0" }}>CIVIC.AM</h4>
-        <p>
-          ԱՄՆ-ն չեղյալ է հայտարարել դիվանագիտական այցը՝ դեպի Չինաստան՝ ակնկալվող
-          ...
-        </p>
+        <h6 className="paragraf">Շիրակի մարզը միանում է «իԳործ» ծրագրին</h6>
+        <h3 className="colorTitle">
+          Շիրակի մարզպետ Հովհաննես Հարությունյանն այսօր ընդունել է ...
+        </h3>
       </div>
 
       <div className="strip"> </div>
@@ -65,4 +60,4 @@ const Poster = () => {
   );
 };
 
-export default Poster;
+export default Post;

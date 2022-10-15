@@ -8,8 +8,8 @@ const NewPost = () => {
         <input placeholder="Что у вас нового  Sedrak ? " />
       </div>
       <hr />
-      <div className="box">
-        <div>
+      <div className="dox d-flex align-items-center pt-2 justify-content-between">
+        <div className="d-flex p-2 align-items-center">
           <svg
             fill="#F3425F"
             viewBox="0 0 24 24"
@@ -30,9 +30,9 @@ const NewPost = () => {
               </g>
             </g>
           </svg>
-          <h4>Прямой эфир</h4>
+          <h4 className="ms-1">Прямой эфир</h4>
         </div>
-        <div>
+        <div className="d-flex p-2 align-items-center">
           <svg
             fill="#45BD62"
             viewBox="0 0 24 24"
@@ -54,9 +54,9 @@ const NewPost = () => {
               </g>
             </g>
           </svg>
-          <h4>Фото/видео</h4>
+          <h4 className="ms-1">Фото/видео</h4>
         </div>
-        <div>
+        <div className="d-flex p-2 align-items-center">
           <svg
             fill="#f8b929"
             viewBox="0 0 24 24"
@@ -82,7 +82,7 @@ const NewPost = () => {
               </g>
             </g>
           </svg>
-          <h4>Чувства/действия</h4>
+          <h4 className="ms-1">Чувства/действия</h4>
         </div>
       </div>
     </div>

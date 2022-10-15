@@ -4,6 +4,13 @@
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
 }
+h3 {
+  font-size: 16px;
+}
+h4 {
+  font-size: 13px;
+  margin-bottom: 0;
+}
 .components {
   display: flex;
   justify-content: space-around;
