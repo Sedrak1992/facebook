@@ -41,7 +41,7 @@ const Header = () => {
               </g>
             </g>
           </svg>
-          <input placeholder="поиск на Facebook" />
+          <input className="search__input" placeholder="поиск на Facebook" />
         </div>
       </div>
       <div className="header--dox2">

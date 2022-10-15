@@ -2,6 +2,7 @@ header {
   display: flex;
   justify-content: space-around;
   height: 56px;
+  background: #fff;
   align-items: center;
 }
 .header--dox {
@@ -33,7 +34,7 @@ header {
   top: 11px;
   left: 11px;
 }
-input {
+.search__input {
   width: 280px;
   height: 40px;
   border: 0;

@@ -2,18 +2,14 @@ import React, { useState } from "react";
 
 import "./style.css";
 
-const Content = () => {
+const LeftSidebar = () => {
   const [open, setOpen] = useState(false);
-  const [open1, setOpen1] = useState(true);
 
-  const f = () => {
-    setOpen(true);
-    setOpen1(false);
-  };
-
-  const i = () => {
+  const showMore = () => {
     setOpen(false);
-    setOpen1(true);
+  };
+  const showLess = () => {
+    setOpen(true);
   };
 
   return (
@@ -60,16 +56,7 @@ const Content = () => {
         />
         <h3 style={{ marginLeft: 14 }}>Воспоминания</h3>
       </div>
-      {open1 && (
-        <div className="content--div background" onClick={() => f()}>
-          <img
-            src="https://icons-for-free.com/iconfiles/png/128/down+expand+expand+more+expandmore+icon-1320185733183690947.png"
-            style={{ width: 34, height: 34, marginLeft: 40 }}
-          />
-          <h3 style={{ marginLeft: 14 }}>показать больше</h3>
-        </div>
-      )}
-      {open && (
+      {open ? (
         <>
           <div className="content--div">
             <img
@@ -197,10 +184,7 @@ const Content = () => {
             />
             <h3 style={{ marginLeft: 14 }}>Messages</h3>
           </div>
-          <div
-            className="content--div background"
-            onClick={() => i()}
-          >
+          <div className="content--div background" onClick={showMore}>
             <img
               style={{ width: 34, height: 34, marginLeft: 40 }}
               src="https://icons-for-free.com/iconfiles/png/128/expand+expand+less+expandless+top+up+icon-1320185733356205582.png"
@@ -208,9 +192,17 @@ const Content = () => {
             <h3 style={{ marginLeft: 14 }}> Показать меньше</h3>
           </div>
         </>
+      ) : (
+        <div className="content--div background" onClick={showLess}>
+          <img
+            src="https://icons-for-free.com/iconfiles/png/128/down+expand+expand+more+expandmore+icon-1320185733183690947.png"
+            style={{ width: 34, height: 34, marginLeft: 40 }}
+          />
+          <h3 style={{ marginLeft: 14 }}>Показать больше</h3>
+        </div>
       )}
     </div>
   );
 };
 
-export default Content;
+export default LeftSidebar;
