@@ -16,10 +16,10 @@ const LeftSidebar = () => {
     <div className="content">
       <div className="content--div">
         <img
-          src="https://scontent.fevn11-1.fna.fbcdn.net/v/t39.30808-1/269669879_3137994416483686_4685938482215500696_n.jpg?stp=c0.0.148.148a_dst-jpg_p148x148&_nc_cat=104&ccb=1-7&_nc_sid=dbb9e7&_nc_ohc=DOJNKvi08RoAX9A5ExG&_nc_ht=scontent.fevn11-1.fna&oh=00_AT_zVWxaS-_KVhEnwNRFlvqjRSlgLhbp_kDG3MMb1S6u4A&oe=634B0AD7"
+          src="/img/269669879_3137994416483686_4685938482215500696_n.jpeg"
           style={{ width: 34, height: 34, marginLeft: 40 }}
         />
-        <h3 style={{ marginLeft: 14 }}>Sedrak Qocharyan</h3>
+        <h3 className="ms-3">Sedrak Qocharyan</h3>
       </div>
       <div className="content--div">
         <img

@@ -4,7 +4,8 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Header from "./components/Header";
 import LeftSidebar from "./components/LeftSidebar";
 import NewPost from "./components/NewPost";
-import Poster from "./components/Poster";
+import Posts from "./components/Posts";
+import Advertising from "./components/Advertising";
 
 import "./App.css";
 
@@ -16,9 +17,9 @@ function App() {
         <LeftSidebar />
         <div>
           <NewPost />
-          <Poster />
+          <Posts />
         </div>
-        <LeftSidebar />
+        <Advertising />
       </div>
     </div>
   );
