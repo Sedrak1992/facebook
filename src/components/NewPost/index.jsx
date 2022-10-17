@@ -8,7 +8,7 @@ const NewPost = () => {
         <input placeholder="Что у вас нового  Sedrak ? " />
       </div>
       <hr />
-      <div className="dox d-flex align-items-center pt-2 justify-content-between">
+      <div className="box d-flex align-items-center pt-2 justify-content-between">
         <div className="d-flex p-2 align-items-center">
           <svg
             fill="#F3425F"

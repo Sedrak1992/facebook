@@ -40,7 +40,7 @@
   background: #f0f2f5;
   cursor: pointer;
 }
-.poster--box > img {
+.poster--box > div > img {
   width: 100%;
 }
 .poster--box > p {
@@ -99,7 +99,7 @@
   background-repeat: no-repeat;
   display: inline-block;
 }
-.a {
+.subtitle {
   background: #f0f2f5;
   padding: 0 16px 6px;
 }
@@ -116,4 +116,13 @@
 .paragraf {
   color: #050525;
   font-weight: 900;
+}
+.title {
+  padding-left: 10px;
+  margin-bottom: 15px;
+}
+.brightText {
+  font-weight: 900;
+  color: #050505;
+  font-size: 16px;
 }
