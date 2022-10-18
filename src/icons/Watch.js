@@ -4,7 +4,7 @@ const Watch = () => {
   return (
     <svg
       viewBox="0 0 28 28"
-      class="x1lliihq x1k90msu x2h7rmj x1qfuztq x5e5rjt"
+      className="x1lliihq x1k90msu x2h7rmj x1qfuztq x5e5rjt"
       fill="currentColor"
       height="28"
       width="28"
