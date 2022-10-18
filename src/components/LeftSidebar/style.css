@@ -3,7 +3,10 @@
   width: 400px;
   margin-left: 40px;
 }
-
+.content--div > img {
+  width: 34px;
+  height: 34px;
+}
 .content--div {
   margin: 8px;
   display: flex;
@@ -11,7 +14,7 @@
   align-items: center;
   font-size: 0.9375rem;
 }
-.background img{
+.background img {
   background: #e4e6eb;
   width: 20px;
   height: 34px;

@@ -1,11 +1,10 @@
 import React from "react";
 
-import GlobeIcon from "./GlobeIcon";
-import ThreeDotsIcon from "./ThreeDotsIcon";
+import GlobeIcon from "../../icons/GlobeIcon";
+import ThreeDotsIcon from "../../icons/ThreeDotsIcon";
 
 const Post = ({ post }) => {
   return (
-    
     <div>
       <div className="post--header">
         <div>

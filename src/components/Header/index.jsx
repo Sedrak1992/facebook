@@ -16,7 +16,7 @@ const Header = () => {
   return (
     <header>
       <div className="header--dox">
-        <div className="div_ox">
+        <div className="logo-avatar">
           <img
             src="/img/269669879_3137994416483686_4685938482215500696_n.jpeg"
             alt="logo"
@@ -45,25 +45,17 @@ const Header = () => {
         </div>
       </div>
       <div className="div-components">
-        <div className="div_ox">
-          <div>
-            <AppsIcon />
-          </div>
+        <div className="icon">
+          <AppsIcon />
         </div>
-        <div className="div_ox">
-          <div>
-            <Messages />
-          </div>
+        <div className="icon">
+          <Messages />
         </div>
-        <div className="div_ox">
-          <div>
-            <Notification />
-          </div>
+        <div className="icon">
+          <Notification />
         </div>
-        <div className="div_ox">
-          <div>
-            <img src="/img/269669879_3137994416483686_4685938482215500696_n.jpeg" />
-          </div>
+        <div className="logo-avatar ms-2">
+          <img src="/img/269669879_3137994416483686_4685938482215500696_n.jpeg" />
         </div>
       </div>
     </header>
