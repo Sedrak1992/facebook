@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { NavLink } from "react-bootstrap";
 
 import "./style.css";
@@ -7,12 +7,19 @@ import VideoCameraBack from "../../icons/VideoCameraBack";
 import Mood from "../../icons/Mood";
 
 const NewPost = () => {
-  
+  const [title, setTitle] = useState("");
+
+  const addNnePort = () => {};
   return (
     <div className="newPost--div">
       <div className="newPost--div__box">
         <img src="/img/269669879_3137994416483686_4685938482215500696_n.jpeg" />
-        <input placeholder=" Что у вас нового  Sedrak ? " />
+        <input
+          placeholder=" Что у вас нового  Sedrak ? "
+          type="text"
+          value={title}
+        />
+        <button onClick={addNnePort}>add post</button>
       </div>
       <hr />
       <div className="box d-flex align-items-center pt-2 justify-content-between">

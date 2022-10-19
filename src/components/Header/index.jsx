@@ -17,10 +17,7 @@ const Header = () => {
     <header>
       <div className="header--dox">
         <div className="logo-avatar">
-          <img
-            src="/img/269669879_3137994416483686_4685938482215500696_n.jpeg"
-            alt="logo"
-          />
+          <img src="/img/Facebook_Logo_(2019).png" alt="logo" />
         </div>
         <div className="box-input">
           <Search />
