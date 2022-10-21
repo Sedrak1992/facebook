@@ -50,7 +50,7 @@
 .comment {
   width: 18px;
   height: 18px;
-  background-image: url("https://static.xx.fbcdn.net/rsrc.php/v3/yQ/r/evRrhXv5YM6.png");
+  background-image: url(https://static.xx.fbcdn.net/rsrc.php/v3/yQ/r/evRrhXv5YM6.png);
   background-position: 0px -213px;
   background-size: 25px 715px;
   background-repeat: no-repeat;
@@ -80,14 +80,14 @@
 .backgroundAdditional {
   width: 37px;
   height: 37px;
-  background: #fff;
+  position: relative;
+  background: red;
   border-radius: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
-  position: absolute;
-  right: 35px;
-  bottom: 164px;
+  left: 434px;
+  bottom: 185px;
 }
 
 .additionalInformation {

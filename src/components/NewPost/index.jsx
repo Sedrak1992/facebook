@@ -1,15 +1,29 @@
 import React, { useState } from "react";
 import { NavLink } from "react-bootstrap";
 
-import "./style.css";
 import Live from "../../icons/Live ";
 import VideoCameraBack from "../../icons/VideoCameraBack";
 import Mood from "../../icons/Mood";
 
-const NewPost = () => {
-  const [title, setTitle] = useState("");
+import "./style.css";
 
-  const addNnePort = () => {};
+const NewPost = ({ posts, setPosts }) => {
+  const [post, setPost] = useState({ title: "" }, new Date());
+
+  const handleKeyDown = (event) => {
+    if (event.key === "Enter") {
+      setPosts([
+        ...posts,
+        {
+          ...post,
+          id: Date.now(),
+          name: "Sedrak Qocharyan",
+          imgLogo: "/img/269669879_3137994416483686_4685938482215500696_n.jpeg",
+        },
+      ]);
+      setPost({ title: "" });
+    }
+  };
   return (
     <div className="newPost--div">
       <div className="newPost--div__box">
@@ -17,9 +31,10 @@ const NewPost = () => {
         <input
           placeholder=" Что у вас нового  Sedrak ? "
           type="text"
-          value={title}
+          onKeyDown={handleKeyDown}
+          value={post.title}
+          onChange={(e) => setPost({ ...post, title: e.target.value })}
         />
-        <button onClick={addNnePort}>add post</button>
       </div>
       <hr />
       <div className="box d-flex align-items-center pt-2 justify-content-between">

@@ -1,17 +1,13 @@
 import React, { useState } from "react";
-import list from "./postList/postListArr";
+import postList from "./postList/postListArr";
 import Post from "./Post";
 import "./style.css";
 
-const Posts = () => {
-  const [posts, setPosts] = useState(list);
-
-  const addPost = () => {};
-
+const Posts = ({ posts }) => {
   return (
     <div className="poster--box">
-      {list.map((post, index) => (
-        <Post key={index} post={post} />
+      {posts.map((post, index) => (
+        <Post number={index + 1} post={post} key={post.id} />
       ))}
     </div>
   );
