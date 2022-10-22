@@ -7,10 +7,14 @@
   border-radius: 10px;
 }
 
-.newPost--div .newPost--div__box > img {
+.logoAvatarPost {
   width: 45px;
   height: 45px;
+  overflow: hidden;
   border-radius: 50px;
+}
+.logoAvatarPost > img {
+  width: 100%;
 }
 .newPost--div .newPost--div__box > input {
   width: 420px;

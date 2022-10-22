@@ -8,7 +8,10 @@ import Mood from "../../icons/Mood";
 import "./style.css";
 
 const NewPost = ({ posts, setPosts }) => {
-  const [post, setPost] = useState({ title: "" }, new Date());
+  const [post, setPost] = useState({ title: "" });
+
+  const d = new Date();
+  let day = d.toLocaleString();
 
   const handleKeyDown = (event) => {
     if (event.key === "Enter") {
@@ -19,6 +22,7 @@ const NewPost = ({ posts, setPosts }) => {
           id: Date.now(),
           name: "Sedrak Qocharyan",
           imgLogo: "/img/269669879_3137994416483686_4685938482215500696_n.jpeg",
+          data: day,
         },
       ]);
       setPost({ title: "" });
@@ -27,7 +31,9 @@ const NewPost = ({ posts, setPosts }) => {
   return (
     <div className="newPost--div">
       <div className="newPost--div__box">
-        <img src="/img/269669879_3137994416483686_4685938482215500696_n.jpeg" />
+        <div className="logoAvatarPost">
+          <img src="/img/269669879_3137994416483686_4685938482215500696_n.jpeg" />
+        </div>
         <input
           placeholder=" Что у вас нового  Sedrak ? "
           type="text"

@@ -18,18 +18,16 @@ function App() {
   // var day = date.toLocaleString("default", { day: "2-digit" });
   // var formattedDate = day + "-" + month + "-" + year;
   const d = new Date();
-
   let day = d.toLocaleString();
 
   return (
     <div className="App">
       <Header />
       <div className="components">
-        <div>
+        {/* <div>
           <h1>{day}</h1>
           <hr />
-        </div>
-
+        </div> */}
         <LeftSidebar />
         <div>
           <NewPost posts={posts} setPosts={setPosts} />

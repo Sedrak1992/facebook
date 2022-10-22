@@ -15,7 +15,7 @@ const Post = ({ post }) => {
                 {post.body} {post.name}
               </div>
               <div>
-                {post.data} {post.a}г. <GlobeIcon />
+                {post.data}г. <GlobeIcon />
               </div>
             </div>
           </div>
@@ -26,8 +26,16 @@ const Post = ({ post }) => {
           </div>
         </div>
       </div>
+
       <h6 className="title"> {post.title}</h6>
-      <img src={post.imgSrc} />
+      {post.imgSrc && (
+        <div className="componentsNewsImg">
+          <img src={post.imgSrc} className="newsImg" />
+          <div className="backgroundAdditional">
+            <div className="additionalInformation"></div>
+          </div>
+        </div>
+      )}
       <div className="subtitle">
         <h4 style={{ padding: "6px 0" }}>{post.linkTitle} </h4>
         <p className="brightText"> {post.preview}</p>
@@ -48,11 +56,6 @@ const Post = ({ post }) => {
         </div>
       </div>
       <div className="stripP"> </div>
-      {post.linkTitle && (
-        <div className="backgroundAdditional">
-          <div className="additionalInformation"></div>
-        </div>
-      )}
     </div>
   );
 };
