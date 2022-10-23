@@ -1,0 +1,7 @@
+.RightSidebar {
+  width: 360px;
+  height: 700px;
+}
+.RightSidebar > div {
+    width: 100%;
+}
