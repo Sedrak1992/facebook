@@ -14,7 +14,7 @@ const NewPost = ({ posts, setPosts }) => {
   let day = d.toLocaleString();
 
   const handleKeyDown = (event) => {
-    if (event.key === "Enter") {
+    if (post.title.length > 0 && event.key === "Enter") {
       setPosts([
         ...posts,
         {
@@ -28,6 +28,7 @@ const NewPost = ({ posts, setPosts }) => {
       setPost({ title: "" });
     }
   };
+
   return (
     <div className="newPost--div">
       <div className="newPost--div__box">

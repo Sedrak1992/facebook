@@ -1,7 +1,74 @@
 .RightSidebar {
   width: 360px;
   height: 700px;
+  border-top: 1px solid #ced0d4;
+  margin-top: 10px;
+}
+p {
+  margin: 0;
 }
 .RightSidebar > div {
-    width: 100%;
+  width: 100%;
+}
+.icons > div {
+  width: 34px;
+  height: 34px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 5px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+.icons > div:hover {
+  background: #dae2ec;
+}
+.userImg {
+  width: 100%;
+  height: 100%;
+  border-radius: 50px;
+}
+.userContes {
+  padding: 4px 0;
+  position: relative;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.userContes:hover {
+  background: #dae2ec;
+}
+
+.Belly {
+  width: 9px;
+  height: 9px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  position: absolute;
+  border-radius: 50px;
+  bottom: 5px;
+  left: 33px;
+}
+.greenCircle {
+  width: 6px;
+  height: 6px;
+  background: green;
+  border-radius: 50px;
+}
+.stories {
+  width: 34px;
+  height: 34px;
+  padding: 1px;
+  border: 2px solid #1877f3;
+  border-radius: 50px;
+  margin: 0 10px;
+}
+.storiesNo {
+  width: 34px;
+  height: 34px;
+  padding: 1px;
+  border: 2px solid red;
+  border-radius: 50px;
+  margin: 0 10px;
 }
