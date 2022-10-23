@@ -8,24 +8,24 @@ import Mood from "../../icons/Mood";
 import "./style.css";
 
 const NewPost = ({ posts, setPosts }) => {
-  const [post, setPost] = useState({ title: "" });
+  const [title, setTitle] = useState("");
 
   const d = new Date();
   let day = d.toLocaleString();
 
   const handleKeyDown = (event) => {
-    if (post.title.length > 0 && event.key === "Enter") {
+    if (title.length > 0 && event.key === "Enter") {
       setPosts([
-        ...posts,
         {
-          ...post,
+          title,
           id: Date.now(),
           name: "Sedrak Qocharyan",
           imgLogo: "/img/269669879_3137994416483686_4685938482215500696_n.jpeg",
           data: day,
         },
+        ...posts,
       ]);
-      setPost({ title: "" });
+      setTitle("");
     }
   };
 
@@ -39,8 +39,8 @@ const NewPost = ({ posts, setPosts }) => {
           placeholder=" Что у вас нового  Sedrak ? "
           type="text"
           onKeyDown={handleKeyDown}
-          value={post.title}
-          onChange={(e) => setPost({ ...post, title: e.target.value })}
+          value={title}
+          onChange={(e) => setTitle(e.target.value)}
         />
       </div>
       <hr />
