@@ -18,15 +18,15 @@ const RightSidebar = () => {
             <Search />
           </div>
           <div>
-            <Options />
+            <Options/>
           </div>
         </div>
       </div>
       {usersList.map((obj, index) => (
         <div key={index} className="mt-1 userContes">
           <div className="d-flex align-items-center">
-            <div className={obj.stories ? "stories" : "storiesNo"}>
-              <img src={obj.img} alt="user" className="userImg" />
+            <div className={obj.stories ? "stories" : "stories--no"}>
+              <img src={obj.img} alt="user" className="user-img" />
             </div>
             <p>{obj.name}</p>
           </div>

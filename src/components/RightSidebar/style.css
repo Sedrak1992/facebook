@@ -23,7 +23,7 @@ p {
 .icons > div:hover {
   background: #dae2ec;
 }
-.userImg {
+.user-img {
   width: 100%;
   height: 100%;
   border-radius: 50px;
@@ -64,11 +64,11 @@ p {
   border-radius: 50px;
   margin: 0 10px;
 }
-.storiesNo {
+.stories--no {
   width: 34px;
   height: 34px;
   padding: 1px;
-  border: 2px solid red;
+  border: 2px solid #f0f2f5;
   border-radius: 50px;
   margin: 0 10px;
 }

@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import postList from "./postList/postListArr";
 import Post from "./Post";
 import "./style.css";
 

@@ -20,7 +20,7 @@ function App() {
         <LeftSidebar />
         <div className="content-app">
           <NewPost posts={posts} setPosts={setPosts} />
-          <Posts posts={posts}/>
+          <Posts posts={posts} />
         </div>
         <RightSidebar />
       </div>

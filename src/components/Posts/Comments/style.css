@@ -1,6 +1,7 @@
 .CommentDiv {
   overflow-x: hidden;
   height: 300px;
+  width: 100%;
 }
 .display {
   display: none;
@@ -40,14 +41,14 @@
   font-size: 14px;
 }
 .respond-input {
-  width: 350px;
   position: absolute;
   padding: 4px 10px;
-  border-radius: 10px;
+  border-radius: 20px;
   background: #f0f2f5;
 }
 .respond-input > input {
   border: 0;
+  width: 390px;
   outline: none;
   background: #f0f2f5;
 }
@@ -55,4 +56,36 @@
   position: relative;
   margin-bottom: 10px;
   padding-bottom: 10px;
+}
+.reply-comment {
+  background: #f0f2f5;
+  width: auto;
+  color: #050505;
+  padding: 6px;
+  border-radius: 10px;
+}
+span {
+  max-width: 420px;
+  word-wrap: break-word;
+  display: inline-block;
+}
+.user--img {
+  width: 30px;
+  height: 30px;
+  border-radius: 30px;
+  overflow: hidden;
+  position: absolute;
+  left: -38px;
+  bottom: 26px;
+}
+
+.user--img > img {
+  width: 100%;
+}
+.comment--reply--div {
+  position: relative;
+}
+
+.black-answers-content {
+  margin-bottom: 36px;
 }

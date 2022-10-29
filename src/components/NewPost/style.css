@@ -1,4 +1,4 @@
-.newPost--div {
+.add--new--post {
   width: 510px;
   height: 140px;
   margin-top: 25px;
@@ -7,16 +7,16 @@
   border-radius: 10px;
 }
 
-.logoAvatarPost {
+.logo--new--image {
   width: 45px;
   height: 45px;
   overflow: hidden;
   border-radius: 50px;
 }
-.logoAvatarPost > img {
+.logo--new--image > img {
   width: 100%;
 }
-.newPost--div .newPost--div__box > input {
+.add--new--post .new--auction > input {
   width: 420px;
   height: 40px;
   font-size: 18px;
@@ -26,7 +26,7 @@
   padding: 8px 12px;
   border-radius: 20px;
 }
-.newPost--div__box {
+.new--auction {
   display: flex;
   justify-content: space-between;
   margin-bottom: 12px;
@@ -35,15 +35,15 @@ hr {
   border: 1px solid #e4e6eb;
   margin-bottom: 10px;
 }
-.box svg {
+.container-will-share svg {
   margin-right: 5px;
 }
-.box > div {
+.container-will-share > div {
   cursor: pointer;
   border-radius: 10px;
   padding: 8px;
   align-items: center;
 }
-.box > div:hover {
+.container-will-share > div:hover {
   background: #f0f2f5;
 }
