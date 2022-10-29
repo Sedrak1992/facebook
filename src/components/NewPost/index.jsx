@@ -12,7 +12,7 @@ const NewPost = ({ posts, setPosts }) => {
 
   const d = new Date();
   let day = d.toLocaleString();
-
+  
   const handleKeyDown = (event) => {
     if (title.length > 0 && event.key === "Enter") {
       setPosts([
@@ -20,7 +20,7 @@ const NewPost = ({ posts, setPosts }) => {
           title,
           id: Date.now(),
           name: "Sedrak Qocharyan",
-          imgLogo: "/img/269669879_3137994416483686_4685938482215500696_n.jpeg",
+          imgLogo: "/facebook/img/269669879_3137994416483686_4685938482215500696_n.jpeg",
           data: day,
         },
         ...posts,
@@ -33,7 +33,7 @@ const NewPost = ({ posts, setPosts }) => {
     <div className="newPost--div">
       <div className="newPost--div__box">
         <div className="logoAvatarPost">
-          <img src="/img/269669879_3137994416483686_4685938482215500696_n.jpeg" />
+          <img src="/facebook/img/269669879_3137994416483686_4685938482215500696_n.jpeg" />
         </div>
         <input
           placeholder=" Что у вас нового  Sedrak ? "

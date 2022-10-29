@@ -12,9 +12,15 @@ h4 {
   margin-bottom: 0;
 }
 .components {
+  margin-top: 56px;
+  height: 100vh;
   display: flex;
   justify-content: space-around;
 }
 #root {
   background: #f0f2f5;
+}
+.content-app {
+  height: 100%;
+  overflow-y: auto;
 }

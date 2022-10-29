@@ -1,21 +1,35 @@
-.poster--box {
+.post-list {
   width: 510px;
-  padding-bottom: 20px;
   border-radius: 10px;
-  margin-top: 10px;
-  background: #fff;
   position: relative;
 }
+:root {
+  --filter-accent: invert(39%) sepia(57%) saturate(200%) saturate(200%)
+    saturate(200%) saturate(200%) saturate(200%) saturate(147.75%)
+    hue-rotate(202deg) brightness(97%) contrast(96%);
+}
 .like {
+  cursor: pointer;
+  background-image: url(https://static.xx.fbcdn.net/rsrc.php/v3/ye/r/7hJ4Yk-Cjrb.png);
+  background-position: 0px -232px;
+  background-size: 25px 796px;
   width: 18px;
   height: 18px;
+  background-repeat: no-repeat;
+  display: inline-block;
+}
+
+/* .like {
+  width: 18px;
+  height: 18px;
+  color: red;
   background-image: url("https://static.xx.fbcdn.net/rsrc.php/v3/yQ/r/evRrhXv5YM6.png");
   background-repeat: no-repeat;
   background-position: 0px -251px;
   background-size: 25px 715px;
   background-repeat: no-repeat;
   display: inline-block;
-}
+} */
 .post--logo {
   width: 45px;
   height: 45px;
@@ -37,16 +51,26 @@
   border-radius: 50px;
 }
 .threeDotsIcon:hover {
-  background: #f0f2f5;
+  border-radius: 10px;
   cursor: pointer;
 }
-.poster--box > div > img {
+
+.post-like > div {
+  -webkit-filter: var(--filter-accent);
+}
+.comment-like {
+  -webkit-filter: var(--filter-accent);
+}
+.post-list > div > img {
   width: 100%;
 }
-.poster--box > p {
+/* .poster--box > p {
+  color: red;
   padding: 4px 16px 5px;
+} */
+.text {
+  font-weight: 900;
 }
-
 .comment {
   width: 18px;
   height: 18px;
@@ -68,12 +92,8 @@
 .justify-content-around > div {
   margin-top: 7px;
   padding: 8px;
-  border-radius: 10px;
 }
-.justify-content-around > div:hover {
-  background: #f0f2f5;
-  cursor: pointer;
-}
+
 .strip {
   border: 1px solid #ced0d4;
 }
@@ -87,7 +107,7 @@
   border: 1px solid #ced0d4;
 }
 .colorTitle {
-  color: red;
+  color: #282828;
   margin-top: 5px;
   font-size: 14px;
   color: #65676b;
@@ -113,16 +133,15 @@
   position: relative;
   height: 270px;
   width: 100%;
-  /* overflow: hidden; */
 }
 .backgroundAdditional {
   width: 37px;
   height: 37px;
-  background: #fff;
   border-radius: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
+  background: #fff;
   position: absolute;
   left: 434px;
   bottom: -18.5px;
@@ -136,4 +155,23 @@
   height: 20px;
   background-repeat: no-repeat;
   display: inline-block;
+}
+.isModal {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  z-index: 4;
+  padding-right: 4px;
+  padding-bottom: 10px;
+}
+.postNou {
+  margin: 20px 0;
+  border-radius: 10px;
+  background: #fff;
+}
+
+.action-button:hover {
+  background: #f0f2f5 !important;
+  cursor: pointer;
+  border-radius: 10px;
 }

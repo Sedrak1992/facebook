@@ -2,10 +2,11 @@ import React from "react";
 
 import GlobeIcon from "../../icons/GlobeIcon";
 import ThreeDotsIcon from "../../icons/ThreeDotsIcon";
+import PostAction from "./PostAction/index";
 
 const Post = ({ post }) => {
   return (
-    <div>
+    <div className="postNou">
       <div className="post--header">
         <div>
           <div className="d-flex align-items-center">
@@ -41,21 +42,7 @@ const Post = ({ post }) => {
         <p className="brightText"> {post.preview}</p>
       </div>
       <div className="strip"> </div>
-      <div className="d-flex justify-content-around pb-3">
-        <div className="d-flex  align-items-center ">
-          <div className="like"></div>
-          <div className="mx-2">Нравится</div>
-        </div>
-        <div className="d-flex  align-items-center">
-          <div className="comment"></div>
-          <div className="mx-2">Комментировать</div>
-        </div>
-        <div className="d-flex  align-items-center ">
-          <div className="share"></div>
-          <div className="mx-2">Поделиться</div>
-        </div>
-      </div>
-      <div className="stripP"> </div>
+      <PostAction />
     </div>
   );
 };

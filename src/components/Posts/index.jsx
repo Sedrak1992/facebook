@@ -5,7 +5,7 @@ import "./style.css";
 
 const Posts = ({ posts }) => {
   return (
-    <div className="poster--box">
+    <div className="post-list">
       {posts.map((post, index) => (
         <Post number={index + 1} post={post} key={post.id} />
       ))}

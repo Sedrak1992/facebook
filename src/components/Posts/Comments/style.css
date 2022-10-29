@@ -1,0 +1,58 @@
+.CommentDiv {
+  overflow-x: hidden;
+  height: 300px;
+}
+.display {
+  display: none;
+}
+.user-name {
+  font-weight: 900;
+  color: #050505;
+  cursor: pointer;
+}
+.onComment {
+  padding: 4px 7px;
+  background: #f0f2f5;
+  border-radius: 10px;
+}
+.onComment > p {
+  max-width: 420px;
+  word-wrap: break-word;
+  color: #050505;
+  font-weight: 400;
+}
+.parent {
+  padding-right: 10px;
+}
+.onComment > h6 {
+  margin-bottom: 0;
+}
+
+.comment-button:hover {
+  border-bottom: 2px solid #333331;
+}
+.comment-button {
+  border: 0;
+  border-bottom: 2px solid transparent;
+  cursor: pointer;
+  background: none;
+  padding: 0 8px;
+  font-size: 14px;
+}
+.respond-input {
+  width: 350px;
+  position: absolute;
+  padding: 4px 10px;
+  border-radius: 10px;
+  background: #f0f2f5;
+}
+.respond-input > input {
+  border: 0;
+  outline: none;
+  background: #f0f2f5;
+}
+.respond-container {
+  position: relative;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+}

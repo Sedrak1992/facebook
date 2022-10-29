@@ -15,16 +15,16 @@ import Notification from "../../icons/Notification";
 const Header = () => {
   return (
     <header>
-      <div className="header--dox">
+      <div className="header--section d-flex">
         <div className="logo-avatar">
-          <img src="img/Facebook_Logo_(2019).png" alt="logo" />
+          <img src="/facebook/img/Facebook_Logo_(2019).png" alt="logo" />
         </div>
-        <div className="box-input">
+        <div className="serge--facebook">
           <Search />
-          <input className="search__input" placeholder="поиск на Facebook" />
+          <input className="search--input" placeholder="поиск на Facebook" />
         </div>
       </div>
-      <div className="header--dox2">
+      <div className="header--navigation">
         <div>
           <Home />
         </div>
@@ -41,7 +41,7 @@ const Header = () => {
           <TheGame />
         </div>
       </div>
-      <div className="div-components">
+      <div className="d-flex">
         <div className="icon">
           <AppsIcon />
         </div>
@@ -52,7 +52,7 @@ const Header = () => {
           <Notification />
         </div>
         <div className="logo-avatar ms-2">
-          <img src="/img/269669879_3137994416483686_4685938482215500696_n.jpeg" />
+          <img src="/facebook/img/269669879_3137994416483686_4685938482215500696_n.jpeg" />
         </div>
       </div>
     </header>
