@@ -1,15 +1,13 @@
 import React, { useState } from "react";
 import "./style.css";
 
-const Comments = ({ img, stories, comment, name, answers, comments }) => {
+const Comments = ({ img, stories, comment, name }) => {
   const [fromLike, setFromLike] = useState(false);
   const [respond, setRespond] = useState(false);
 
   const [inputComment, setInputComment] = useState(`${name}, `);
   const [commentAnswers, setCommentAnswers] = useState([]);
 
-
-  
   const replyComment = (event) => {
     if (inputComment.length > 0 && event.key === "Enter") {
       setCommentAnswers([
@@ -62,7 +60,7 @@ const Comments = ({ img, stories, comment, name, answers, comments }) => {
                 <div key={index} className="comment--reply--div ms-4 mb-3">
                   <span className="reply-comment">
                     <div className="user--img">
-                      <img src={item.img} alt="user-avatar"/>
+                      <img src={item.img} alt="user-avatar" />
                     </div>
                     <p className="user-name">{item.maName}</p>
                     {item.answers}

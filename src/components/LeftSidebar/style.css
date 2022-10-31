@@ -15,7 +15,7 @@
   align-items: center;
   font-size: 0.9375rem;
 }
-.background img {
+.round-background > img {
   background: #e4e6eb;
   border-radius: 50px;
 }
@@ -29,4 +29,8 @@
 }
 .user-image > img {
   width: 100%;
+}
+.arrow {
+  width: 35px;
+  height: 35px;
 }

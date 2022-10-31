@@ -184,21 +184,19 @@ const LeftSidebar = () => {
             />
             <h3 className="ms-3">Messages</h3>
           </div>
-          <div className="image-categories background" onClick={showMore}>
+          <div className="image-categories round-background" onClick={showMore}>
             <img
-              className="ms-4"
-              style={{ width: 34, height: 34 }}
+              className="ms-4 arrow"
               src="https://icons-for-free.com/iconfiles/png/128/expand+expand+less+expandless+top+up+icon-1320185733356205582.png"
             />
             <h3 className="ms-3"> Показать меньше</h3>
           </div>
         </>
       ) : (
-        <div className="image-categories background" onClick={showLess}>
+        <div className="image-categories round-background" onClick={showLess}>
           <img
             src="https://icons-for-free.com/iconfiles/png/128/down+expand+expand+more+expandmore+icon-1320185733183690947.png"
-            style={{ width: 34, height: 34 }}
-            className="ms-4"
+            className="ms-4 arrow"
           />
           <h3 className="ms-3">Показать больше</h3>
         </div>

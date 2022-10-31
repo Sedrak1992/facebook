@@ -26,11 +26,7 @@ header {
 .header--navigation div:hover svg {
   fill: blue;
 }
-
-.serge--facebook {
-  position: relative;
-}
-.serge--facebook svg {
+.position-relative svg {
   position: absolute;
   top: 11px;
   left: 11px;

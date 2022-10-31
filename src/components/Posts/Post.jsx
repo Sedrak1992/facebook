@@ -6,11 +6,11 @@ import PostAction from "./PostAction/index";
 
 const Post = ({ post }) => {
   return (
-    <div className="postNou">
-      <div className="post--header">
+    <div className="container-for-new-post">
+      <div className="post-header">
         <div>
           <div className="d-flex align-items-center">
-            <img className="post--logo" src={post.imgLogo} />
+            <img className="post-logo" src={post.imgLogo} />
             <div>
               <div>
                 {post.body} {post.name}
@@ -22,26 +22,25 @@ const Post = ({ post }) => {
           </div>
         </div>
         <div>
-          <div className="threeDotsIcon">
+          <div className="three-dots-svg">
             <ThreeDotsIcon />
           </div>
         </div>
       </div>
-
-      <h6 className="title"> {post.title}</h6>
+      <h6 className="post-title">{post.title}</h6>
       {post.imgSrc && (
-        <div className="componentsNewsImg">
-          <img src={post.imgSrc} className="newsImg" />
-          <div className="backgroundAdditional">
-            <div className="additionalInformation"></div>
+        <div className="post-container-news">
+          <img src={post.imgSrc} className="post-image-news" />
+          <div className="container-to-learn-more">
+            <div className="to-learn-more-icon"></div>
           </div>
         </div>
       )}
-      <div className="subtitle">
-        <h4 style={{ padding: "6px 0" }}>{post.linkTitle} </h4>
-        <p className="brightText"> {post.preview}</p>
+      <div className="new-post-news">
+        <h4 className="pt-1 pb-1">{post.linkTitle} </h4>
+        <p className="new-post-news-title"> {post.preview}</p>
       </div>
-      <div className="strip"> </div>
+      <div className="post-line"> </div>
       <PostAction />
     </div>
   );

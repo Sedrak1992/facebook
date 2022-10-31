@@ -36,7 +36,7 @@ const NewPost = ({ posts, setPosts }) => {
           <img src="/facebook/img/269669879_3137994416483686_4685938482215500696_n.jpeg" />
         </div>
         <input
-          placeholder="Что у вас нового  Sedrak ?"
+          placeholder="Что у вас нового Sedrak ?"
           type="text"
           onKeyDown={handleKeyDownPost}
           value={title}

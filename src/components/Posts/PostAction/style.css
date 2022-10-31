@@ -1,0 +1,16 @@
+.comment-text {
+  font-weight: 900;
+}
+.action-button:hover {
+  background: #f0f2f5;
+  cursor: pointer;
+  border-radius: 10px;
+}
+.post-line {
+  border: 2px solid #ced0d4;
+}
+.qqqq {
+  background: red;
+  width: 20px;
+  height: 20px;
+}

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 
 import "./style.css";
 
@@ -6,7 +6,7 @@ const NewComment = ({ inputValue, newPostValue, setInputValue }) => {
   return (
     <div>
       <input
-        placeholder="Add new comment"
+        placeholder="Add new comment "
         type="text"
         value={inputValue}
         onKeyDown={newPostValue}

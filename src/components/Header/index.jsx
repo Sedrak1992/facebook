@@ -1,16 +1,16 @@
 import React from "react";
+
 import Search from "../../icons/Search";
 import Home from "../../icons/Home";
-
 import People from "../../icons/People";
 import Marketplace from "../../icons/Marketplace";
 import Watch from "../../icons/Watch";
-
-import "./style.css";
 import TheGame from "../../icons/TheGame";
 import AppsIcon from "../../icons/AppsIcon";
 import Messages from "../../icons/Messages";
 import Notification from "../../icons/Notification";
+
+import "./style.css";
 
 const Header = () => {
   return (
@@ -19,14 +19,14 @@ const Header = () => {
         <div className="logo-avatar">
           <img src="/facebook/img/Facebook_Logo_(2019).png" alt="logo" />
         </div>
-        <div className="serge--facebook">
+        <div className="position-relative">
           <Search />
           <input className="search--input" placeholder="поиск на Facebook" />
         </div>
       </div>
       <div className="header--navigation">
         <div>
-          <Home />
+          <Home/>
         </div>
         <div>
           <People />

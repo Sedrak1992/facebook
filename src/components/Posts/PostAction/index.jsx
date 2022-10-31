@@ -1,65 +1,19 @@
 import React, { useState } from "react";
 import Comments from "../Comments/index";
 import NewComment from "./NewComment/index";
+import commentsList from "./comments";
+
+import "./style.css";
 
 const PostAction = ({}) => {
-  const [open, setOpen] = useState(false);
-  const [modal, setModal] = useState(false);
+  const [isLike, setIsLike] = useState(false);
+  const [openCommand, setOpenCommand] = useState(false);
   const [inputValue, setInputValue] = useState("");
-  const [commentBox, setCommentBox] = useState(false);
-  const [comments, setComments] = useState([
-    {
-      id: 1,
-      img: "/facebook/user/ГургенАбагян.jpeg",
-      name: "Гурген Абагян",
-      comment: "`fgg7i  nnnkk nnnnnn9u89u9",
-      stories: true,
-      answers: "",
-    },
-    {
-      id: 2,
-      img: "/facebook/user/Геворг Авоян.jpeg",
-      name: "Геворг Авоян",
-      comment: "`fgg7i  nnnkk nnnnnn9u89u9",
-      stories: false,
-      answers: "",
-    },
-    {
-      id: 3,
-      img: "/facebook/user/Рафаел Кочарян.jpeg",
-      name: "Рафаел Кочарян",
-      comment: "`fgg7i  nnnkk nnnnnn9u89u9",
-      stories: false,
-      answers: "",
-    },
-    {
-      id: 4,
-      img: "/facebook/user/Christine Avanesyan.jpeg",
-      name: "Christine Avanesyan",
-      comment: "`fgg7i  nnnkk nnnnnn9u89u9",
-      stories: true,
-      answers: "www",
-    },
-    {
-      id: 5,
-      img: "/facebook/user/YuraArzumanyan.jpeg",
-      name: " Yura Arzumanyan ",
-      comment: "`fgg7i  nnnkk nnnnnn9u89u9",
-      stories: false,
-      answers: "",
-    },
-    {
-      id: 6,
-      img: "/facebook/user/Toma Abagyan.jpeg",
-      name: "Toma Abagyan",
-      comment: "`fgg7i  nnnkk nnnnnn9u89u9",
-      stories: false,
-      answers: "hhhhhhhhh",
-    },
-  ]);
+  const [commentContainer, setCommentContainer] = useState(false);
+  const [comments, setComments] = useState(commentsList);
 
   const newPostValue = (event) => {
-    setCommentBox(true);
+    setCommentContainer(true);
     if (inputValue.length > 0 && event.key === "Enter") {
       setComments([
         {
@@ -67,7 +21,6 @@ const PostAction = ({}) => {
           name: "Sedrak Qocharyan",
           img: "/facebook/user/269669879_3137994416483686_4685938482215500696_n.jpeg",
           comment: inputValue,
-          answers: "fff",
         },
         ...comments,
       ]);
@@ -75,30 +28,30 @@ const PostAction = ({}) => {
     }
   };
 
-  const toggle = () => {
-    setOpen(!open);
+  const assetLike = () => {
+    setIsLike(!isLike);
   };
-  const outModel = () => {
-    setModal(!modal);
-    setCommentBox(!commentBox);
+  const WriteANewComment = () => {
+    setOpenCommand(!openCommand);
+    setCommentContainer(!commentContainer);
   };
 
   return (
     <div>
-      <div className="d-flex justify-content-around pb-3 text">
+      <div className="d-flex justify-content-around pb-3 comment-text">
         <div
           className={
-            `d-flex  align-items-center action-button` +
-            (open ? " post-like " : "")
+            `d-flex  align-items-center action-button ` +
+            (isLike ? " post-like " : "")
           }
-          onClick={toggle}
+          onClick={assetLike}
         >
           <div className="like"></div>
           <div className="mx-2">Нравится</div>
         </div>
         <div
           className="d-flex  align-items-center action-button"
-          onClick={outModel}
+          onClick={WriteANewComment}
         >
           <div className="comment"></div>
           <div className="mx-2">Комментировать</div>
@@ -108,16 +61,16 @@ const PostAction = ({}) => {
           <div className="mx-2">Поделиться</div>
         </div>
       </div>
-      {modal && (
+      {openCommand && (
         <NewComment
           inputValue={inputValue}
           setInputValue={setInputValue}
           newPostValue={newPostValue}
         />
       )}
-      <div className="stripP"></div>
-      <div className={commentBox ? "CommentDiv" : "display"}>
-        {commentBox &&
+      <div className="post-line"></div>
+      <div className={commentContainer ? "comments-container" : "d-none"}>
+        {commentContainer &&
           comments.map((item) => (
             <Comments key={item.id} comments={comments} {...item} />
           ))}

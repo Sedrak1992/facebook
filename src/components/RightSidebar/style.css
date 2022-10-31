@@ -1,16 +1,13 @@
-.RightSidebar {
+.right-sidebar {
   width: 360px;
   height: 700px;
   border-top: 1px solid #ced0d4;
   margin-top: 10px;
 }
-p {
-  margin: 0;
-}
-.RightSidebar > div {
+.right-sidebar > div {
   width: 100%;
 }
-.icons > div {
+.icons-box > div {
   width: 34px;
   height: 34px;
   display: flex;
@@ -20,7 +17,7 @@ p {
   border-radius: 50px;
   cursor: pointer;
 }
-.icons > div:hover {
+.icons-box > div:hover {
   background: #dae2ec;
 }
 .user-img {
@@ -28,35 +25,22 @@ p {
   height: 100%;
   border-radius: 50px;
 }
-.userContes {
+.user-contes-box {
   padding: 4px 0;
   position: relative;
   border-radius: 8px;
   cursor: pointer;
 }
-.userContes:hover {
+.user-contes-box:hover {
   background: #dae2ec;
 }
-
-.Belly {
-  width: 9px;
-  height: 9px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: #fff;
-  position: absolute;
-  border-radius: 50px;
-  bottom: 5px;
-  left: 33px;
-}
-.greenCircle {
+.user-online {
   width: 6px;
   height: 6px;
   background: green;
   border-radius: 50px;
 }
-.stories {
+.stories-yes {
   width: 34px;
   height: 34px;
   padding: 1px;
@@ -71,4 +55,16 @@ p {
   border: 2px solid #f0f2f5;
   border-radius: 50px;
   margin: 0 10px;
+}
+.online-border {
+  width: 9px;
+  height: 9px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  position: absolute;
+  border-radius: 50px;
+  bottom: 8px;
+  left: 33px;
 }
