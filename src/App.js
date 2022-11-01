@@ -1,29 +1,23 @@
-import React, { useState } from "react";
+import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
+import { Routes, Route } from "react-router-dom";
 
-import Header from "./components/Header";
-import LeftSidebar from "./components/LeftSidebar";
-import NewPost from "./components/NewPost";
-import Posts from "./components/Posts";
-import postList from "./components/Posts/postList/postListArr";
-import RightSidebar from "./components/RightSidebar";
+import Header from "./components/HomePage/Header";
+import Messages from "./components/Messages";
+import Home from "./components/HomePage/Home.jsx";
+
 
 import "./App.css";
 
 function App() {
-  const [posts, setPosts] = useState(postList);
-
   return (
     <div className="App">
+    
       <Header />
-      <div className="components">
-        <LeftSidebar />
-        <div className="content-app">
-          <NewPost posts={posts} setPosts={setPosts} />
-          <Posts posts={posts} />
-        </div>
-        <RightSidebar />
-      </div>
+      <Routes>
+        <Route path="/aa" element={<Messages />} />
+        <Route path="/Home" element={<Home />} />
+      </Routes>
     </div>
   );
 }

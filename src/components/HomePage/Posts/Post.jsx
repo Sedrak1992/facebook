@@ -1,7 +1,8 @@
 import React from "react";
+import Posts from ".";
 
-import GlobeIcon from "../../icons/GlobeIcon";
-import ThreeDotsIcon from "../../icons/ThreeDotsIcon";
+import GlobeIcon from "../../../icons/GlobeIcon";
+import ThreeDotsIcon from "../../../icons/ThreeDotsIcon";
 import PostAction from "./PostAction/index";
 
 const Post = ({ post }) => {

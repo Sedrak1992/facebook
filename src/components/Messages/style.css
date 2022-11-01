@@ -1,0 +1,125 @@
+.users {
+  width: 350px;
+  height: 100vh;
+  overflow: auto;
+  padding-right: 7px;
+  position: relative;
+  border-right: 2px #282828 solid;
+  background: #fff;
+  padding-bottom: 60px;
+}
+.options {
+  background-image: url(https://static.xx.fbcdn.net/rsrc.php/v3/yn/r/B3JAIfxpsBn.png);
+  background-position: -105px -105px;
+  background-size: 189px 194px;
+  width: 20px;
+  height: 20px;
+  background-repeat: no-repeat;
+  display: inline-block;
+}
+
+.new-rooms {
+  background-image: url(https://static.xx.fbcdn.net/rsrc.php/v3/yA/r/8Ys3L3ttMZM.png);
+  background-position: 0px -292px;
+  background-size: 33px 1379px;
+  width: 20px;
+  height: 20px;
+  background-repeat: no-repeat;
+  display: inline-block;
+}
+
+.send-chat {
+  background-image: url(https://static.xx.fbcdn.net/rsrc.php/v3/yA/r/8Ys3L3ttMZM.png);
+  background-position: -0px -502px;
+  background-size: 33px 1379px;
+  width: 20px;
+  height: 20px;
+  background-repeat: no-repeat;
+  display: inline-block;
+}
+.items {
+  margin: 0 6px;
+  width: 40px;
+  height: 40px;
+  background: #e4e6eb;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.items:hover {
+  background: #858689;
+}
+.messages-input-text {
+  width: 98%;
+}
+.messenger-container {
+  width: 100%;
+  cursor: progress;
+  margin: 10px 3px;
+  border-radius: 10px;
+}
+.messenger-container:hover {
+  background: #c0c2c8;
+}
+.messenger-box-images {
+  width: 56px;
+  border-radius: 50px;
+  overflow: hidden;
+  height: 56px;
+  margin: 10px;
+}
+.messenger-box-images > img {
+  width: 100%;
+}
+.messenger-footer {
+  height: 60px;
+  width: 350px;
+  cursor: pointer;
+  position: fixed;
+  background: rgb(244, 239, 239);
+  border-top: 2px #858689 solid;
+  bottom: 0;
+  z-index: 8;
+  left: 0;
+}
+.download-messenger {
+  background-image: url(https://static.xx.fbcdn.net/rsrc.php/v3/yg/r/Z1Lbcq1Seo0.png);
+  background-position: 0px -412px;
+  background-size: 37px 429px;
+  width: 16px;
+  height: 16px;
+  background-repeat: no-repeat;
+  display: inline-block;
+}
+.chat {
+  width: 800px;
+  position: relative;
+  height: 84vh;
+  background: #fff;
+}
+
+.user-box-chat > div > input {
+  width: 510px;
+  padding: 10px 20px;
+  border-radius: 50px;
+  background: #f0f2f5;
+  outline: none;
+  border: 0;
+}
+.user-box-chat > div {
+  margin: 7px;
+  cursor: pointer;
+}
+.light-background{
+  width: 45px;
+  height: 45px;
+}
+.light-background:hover{
+  background: rgb(198, 191, 191);
+  border-radius: 50px;
+}
+.user-box-chat {
+  margin: 3px;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}

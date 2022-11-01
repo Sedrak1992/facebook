@@ -1,5 +1,5 @@
 import React from "react";
-import Search from "../../icons/Search";
+import Search from "../../../icons/Search";
 import "./style.css";
 import NewRooms from "./svg/NewRooms";
 import Options from "./svg/Options";

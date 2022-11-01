@@ -1,13 +1,14 @@
 import React, { useState } from "react";
 
-import Live from "../../icons/Live ";
-import VideoCameraBack from "../../icons/VideoCameraBack";
-import Mood from "../../icons/Mood";
+import Live from "../../../icons/Live ";
+import VideoCameraBack from "../../../icons/VideoCameraBack";
+import Mood from "../../../icons/Mood";
 
 import "./style.css";
 
 const NewPost = ({ posts, setPosts }) => {
   const [title, setTitle] = useState("");
+
 
   const dateNow = new Date();
   let dateAndHour = dateNow.toLocaleString();

@@ -31,7 +31,7 @@ const commentsList = [
     id: 5,
     img: "/facebook/user/YuraArzumanyan.jpeg",
     name: " Yura Arzumanyan ",
-    comment: "`fgg7i  nnnkk nnnnnn9u89u9",
+    comment: "gg7i  nnnkk nnnnnn9u89u9",
     stories: false,
   },
   {

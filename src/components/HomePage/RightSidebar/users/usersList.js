@@ -5,6 +5,7 @@ const usersList = [
     name: "Гурген Абагян",
     userOnline: true,
     stories: true,
+    comment: "gg7i  nnnkk nnnnnn9u89u9",
   },
   {
     id: 2,
@@ -12,6 +13,7 @@ const usersList = [
     name: "Рафаел Кочарян",
     userOnline: true,
     stories: true,
+    comment: "gg7i  nnnkk nnnnnn9u89u9",
   },
   {
     id: 3,
@@ -19,6 +21,7 @@ const usersList = [
     name: "Christine Avanesyan",
     userOnline: true,
     stories: false,
+    comment: "gg7i  nnnkk nnnnnn9u89u9",
   },
   {
     id: 4,
@@ -26,12 +29,14 @@ const usersList = [
     name: "Yura Arzumanyan",
     userOnline: false,
     stories: false,
+    comment: "gg7i  nnnkk nnnnnn9u89u9",
   },
   {
     id: 5,
     img: "/facebook/user/Toma Abagyan.jpeg",
     name: "Toma Abagyan",
     userOnline: false,
+    comment: "gg7i  nnnkk nnnnnn9u89u9",
     stories: false,
   },
   {
@@ -40,6 +45,7 @@ const usersList = [
     name: "Сергей Денисов",
     stories: false,
     userOnline: true,
+    comment: "gg7i  nnnkk nnnnnn9u89u9",
   },
   {
     id: 7,
@@ -47,6 +53,7 @@ const usersList = [
     name: "Shushan S-yan",
     stories: false,
     userOnline: false,
+    comment: "gg7i  nnnkk nnnnnn9u89u9",
   },
   {
     id: 8,
@@ -54,6 +61,7 @@ const usersList = [
     name: "Spartak Qocharyan",
     stories: false,
     userOnline: false,
+    comment: "gg7i  nnnkk nnnnnn9u89u9",
   },
   {
     id: 9,
@@ -61,6 +69,7 @@ const usersList = [
     name: "Anna Muradyan",
     stories: false,
     userOnline: false,
+    comment: "gg7i  nnnkk nnnnnn9u89u9",
   },
   {
     id: 10,
@@ -68,6 +77,7 @@ const usersList = [
     name: "Kristi Araqelyan",
     stories: true,
     userOnline: true,
+    comment: "gg7i  nnnkk nnnnnn9u89u9",
   },
 ];
 
