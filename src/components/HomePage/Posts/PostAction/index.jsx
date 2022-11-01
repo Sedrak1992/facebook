@@ -5,8 +5,7 @@ import commentsList from "./comments";
 
 import "./style.css";
 
-const PostAction = ({}) => {
-  const [isLike, setIsLike] = useState(false);
+const PostAction = ({ assetLike, isLike }) => {
   const [openCommand, setOpenCommand] = useState(false);
   const [inputValue, setInputValue] = useState("");
   const [commentContainer, setCommentContainer] = useState(false);
@@ -28,9 +27,6 @@ const PostAction = ({}) => {
     }
   };
 
-  const assetLike = () => {
-    setIsLike(!isLike);
-  };
   const WriteANewComment = () => {
     setOpenCommand(!openCommand);
     setCommentContainer(!commentContainer);

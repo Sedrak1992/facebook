@@ -5,9 +5,9 @@ const AttachFile = () => {
       viewBox="0 -1 17 17"
       height="20px"
       width="20px"
-      class="x1lliihq x1k90msu x13hzchw x1qfuztq"
+      className="x1lliihq x1k90msu x13hzchw x1qfuztq"
     >
-      <g fill="none" fill-rule="evenodd">
+      <g fill="none" fillRule="evenodd">
         <path
           d="M2.882 13.13C3.476 4.743 3.773.48 3.773.348L2.195.516c-.7.1-1.478.647-1.478 1.647l1.092 11.419c0 .5.2.9.4 1.3.4.2.7.4.9.4h.4c-.6-.6-.727-.951-.627-2.151z"
           fill="#0084ff"
@@ -20,8 +20,8 @@ const AttachFile = () => {
         <path
           d="M13.9 15.5l-8.2-.7c-.7-.1-1.3-.8-1.3-1.6l1-11.4C5.5 1 6.2.5 7 .5l8.2.7c.8.1 1.3.8 1.3 1.6l-1 11.4c-.1.8-.8 1.4-1.6 1.3z"
           stroke="#0084ff"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeinecap="round"
+          stroke-inejoin="round"
         ></path>
       </g>
     </svg>

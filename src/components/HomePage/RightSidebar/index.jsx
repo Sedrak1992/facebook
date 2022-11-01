@@ -26,8 +26,8 @@ const RightSidebar = () => {
       {usersList.map((item, index) => (
         <div key={index} className="mt-1 user-contes-box">
           <div className="d-flex align-items-center">
-            <div className={item.stories ? "stories-yes" : "stories--no"}>
-              <img src={item.img} alt="user" className="user-img" />
+            <div className={item.stories ? "stories-yes " : "stories-no"}>
+              <img src={item.img} alt="user" className=" user-img" />
             </div>
             <p>{item.name}</p>
           </div>

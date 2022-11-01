@@ -9,7 +9,6 @@ import "./style.css";
 const NewPost = ({ posts, setPosts }) => {
   const [title, setTitle] = useState("");
 
-
   const dateNow = new Date();
   let dateAndHour = dateNow.toLocaleString();
 
@@ -23,6 +22,7 @@ const NewPost = ({ posts, setPosts }) => {
           imgLogo:
             "/facebook/img/269669879_3137994416483686_4685938482215500696_n.jpeg",
           data: dateAndHour,
+          quantity: 0,
         },
         ...posts,
       ]);

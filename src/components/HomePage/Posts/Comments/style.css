@@ -1,4 +1,4 @@
-.comments-container{
+.comments-container {
   overflow-x: hidden;
   height: 300px;
   width: 100%;
@@ -7,9 +7,11 @@
   font-weight: 900;
   color: #050505;
   cursor: pointer;
+  margin-bottom: 0;
 }
 .onComment {
   padding: 4px 7px;
+  display: inline-block;
   background: #f0f2f5;
   border-radius: 10px;
 }
@@ -18,6 +20,7 @@
   word-wrap: break-word;
   color: #050505;
   font-weight: 400;
+  margin-bottom: 0;
 }
 .parent {
   padding-right: 10px;
@@ -84,4 +87,29 @@ span {
 }
 .black-answers-content {
   margin-bottom: 36px;
+}
+.online {
+  width: 9px;
+  height: 9px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  border-radius: 50px;
+  position: absolute;
+  right: 12px;
+  bottom: 1px;
+}
+.username-online {
+  display: none;
+}
+.container-uses {
+  cursor: pointer;
+  position: relative;
+}
+.green-online {
+  width: 6px;
+  height: 6px;
+  background: green;
+  border-radius: 50px;
 }

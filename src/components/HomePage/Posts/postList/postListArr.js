@@ -2,7 +2,7 @@ const postList = [
   {
     id: 1,
     imgLogo:
-      "https://scontent.fevn11-1.fna.fbcdn.net/v/t39.30808-1/301873921_386727586976324_2791501370287178672_n.jpg?stp=c31.0.80.80a_cp0_dst-jpg_p80x80&_nc_cat=103&ccb=1-7&_nc_sid=c6021c&_nc_ohc=PYgh7ybIb3wAX8mkhIJ&tn=ffOXZHG-wZX3vd6c&_nc_ht=scontent.fevn11-1.fna&oh=00_AT_oHeVVm_e4g6DtSQOh2gBm9TSOH1L2LbVgfTDxr7o-aQ&oe=634DDB4A",
+      "https://scontent.fevn11-1.fna.fbcdn.net/v/t39.30808-1/285611919_385167300295261_6908542347217504437_n.jpg?stp=cp0_dst-jpg_p80x80&_nc_cat=106&ccb=1-7&_nc_sid=c6021c&_nc_ohc=l184wKsmJ1YAX_pOgia&tn=GgYuGzD15u9fM5An&_nc_ht=scontent.fevn11-1.fna&oh=00_AfAbv9RmLiwSTd-wcR3Y3ysefVBrYB3Kek6uG8tg_jFspg&oe=63654693",
     data: " 30 июнь 2021",
     body: "Civic.am",
     title:
@@ -12,11 +12,13 @@ const postList = [
     preview:
       "ԱՄՆ-ն չեղյալ է հայտարարել դիվանագիտական այցը՝ դեպի Չինաստան՝ ակնկալվող...",
     linkTitle: "CIVIC.AM",
+    quantity: 22,
   },
   {
     id: 2,
     imgLogo:
-      "https://scontent.fevn11-1.fna.fbcdn.net/v/t39.30808-1/301873921_386727586976324_2791501370287178672_n.jpg?stp=c31.0.80.80a_cp0_dst-jpg_p80x80&_nc_cat=103&ccb=1-7&_nc_sid=c6021c&_nc_ohc=PYgh7ybIb3wAX8mkhIJ&tn=ffOXZHG-wZX3vd6c&_nc_ht=scontent.fevn11-1.fna&oh=00_AT_oHeVVm_e4g6DtSQOh2gBm9TSOH1L2LbVgfTDxr7o-aQ&oe=634DDB4A",
+      "https://scontent.fevn11-1.fna.fbcdn.net/v/t39.30808-1/285611919_385167300295261_6908542347217504437_n.jpg?stp=cp0_dst-jpg_p80x80&_nc_cat=106&ccb=1-7&_nc_sid=c6021c&_nc_ohc=l184wKsmJ1YAX_pOgia&tn=GgYuGzD15u9fM5An&_nc_ht=scontent.fevn11-1.fna&oh=00_AfAbv9RmLiwSTd-wcR3Y3ysefVBrYB3Kek6uG8tg_jFspg&oe=63654693",
+
     data: "1 сентябрь 2021",
     body: "Civic.am",
     title: "Շիրակի մարզը միանում է «իԳործ» ծրագրին",
@@ -25,11 +27,13 @@ const postList = [
     preview:
       "Շիրակի մարզը միանում է «իԳործ» ծրագրին Շիրակի մարզպետ Հովհաննես Հարությունյանն այսօր ընդունել է ...",
     linkTitle: "CIVIC.AM",
+    quantity: 987,
   },
   {
     id: 3,
     imgLogo:
-      "https://scontent.fevn11-1.fna.fbcdn.net/v/t39.30808-1/301873921_386727586976324_2791501370287178672_n.jpg?stp=c31.0.80.80a_cp0_dst-jpg_p80x80&_nc_cat=103&ccb=1-7&_nc_sid=c6021c&_nc_ohc=PYgh7ybIb3wAX8mkhIJ&tn=ffOXZHG-wZX3vd6c&_nc_ht=scontent.fevn11-1.fna&oh=00_AT_oHeVVm_e4g6DtSQOh2gBm9TSOH1L2LbVgfTDxr7o-aQ&oe=634DDB4A",
+      "https://scontent.fevn11-1.fna.fbcdn.net/v/t39.30808-1/285611919_385167300295261_6908542347217504437_n.jpg?stp=cp0_dst-jpg_p80x80&_nc_cat=106&ccb=1-7&_nc_sid=c6021c&_nc_ohc=l184wKsmJ1YAX_pOgia&tn=GgYuGzD15u9fM5An&_nc_ht=scontent.fevn11-1.fna&oh=00_AfAbv9RmLiwSTd-wcR3Y3ysefVBrYB3Kek6uG8tg_jFspg&oe=63654693",
+
     data: "2 сентябрь 2021",
     body: "Civic.am",
     title:
@@ -39,11 +43,12 @@ const postList = [
     preview:
       "Միասին մենք կարող ենք նպաստել ավելի խաղաղ և բարեկեցիկ ապագայի ապահովմանը. դեսպան ...",
     linkTitle: "CIVIC.AM",
+    quantity: 77,
   },
   {
     id: 4,
     imgLogo:
-      "https://scontent.fevn11-1.fna.fbcdn.net/v/t39.30808-1/301873921_386727586976324_2791501370287178672_n.jpg?stp=c31.0.80.80a_cp0_dst-jpg_p80x80&_nc_cat=103&ccb=1-7&_nc_sid=c6021c&_nc_ohc=PYgh7ybIb3wAX8mkhIJ&tn=ffOXZHG-wZX3vd6c&_nc_ht=scontent.fevn11-1.fna&oh=00_AT_oHeVVm_e4g6DtSQOh2gBm9TSOH1L2LbVgfTDxr7o-aQ&oe=634DDB4A",
+      "https://scontent.fevn11-1.fna.fbcdn.net/v/t39.30808-1/285611919_385167300295261_6908542347217504437_n.jpg?stp=cp0_dst-jpg_p80x80&_nc_cat=106&ccb=1-7&_nc_sid=c6021c&_nc_ohc=l184wKsmJ1YAX_pOgia&tn=GgYuGzD15u9fM5An&_nc_ht=scontent.fevn11-1.fna&oh=00_AfAbv9RmLiwSTd-wcR3Y3ysefVBrYB3Kek6uG8tg_jFspg&oe=63654693",
     data: "15 сентябрь 2021 ",
     body: "Civic.am",
     title:
@@ -52,11 +57,12 @@ const postList = [
     preview:
       "Մինչ օրս հարկային արտոնություն է ստացել 1009 նորաստեղծ տեխնոլոգիական ընկերություն",
     linkTitle: "CIVIC.AM",
+    quantity: 2,
   },
   {
     id: 5,
     imgLogo:
-      "https://scontent.fevn11-1.fna.fbcdn.net/v/t39.30808-1/301873921_386727586976324_2791501370287178672_n.jpg?stp=c31.0.80.80a_cp0_dst-jpg_p80x80&_nc_cat=103&ccb=1-7&_nc_sid=c6021c&_nc_ohc=PYgh7ybIb3wAX8mkhIJ&tn=ffOXZHG-wZX3vd6c&_nc_ht=scontent.fevn11-1.fna&oh=00_AT_oHeVVm_e4g6DtSQOh2gBm9TSOH1L2LbVgfTDxr7o-aQ&oe=634DDB4A",
+      "https://scontent.fevn11-1.fna.fbcdn.net/v/t39.30808-1/285611919_385167300295261_6908542347217504437_n.jpg?stp=cp0_dst-jpg_p80x80&_nc_cat=106&ccb=1-7&_nc_sid=c6021c&_nc_ohc=l184wKsmJ1YAX_pOgia&tn=GgYuGzD15u9fM5An&_nc_ht=scontent.fevn11-1.fna&oh=00_AfAbv9RmLiwSTd-wcR3Y3ysefVBrYB3Kek6uG8tg_jFspg&oe=63654693",
     data: "15 сентябрь 2021 ",
     body: "Civic.am",
     title:
@@ -66,6 +72,7 @@ const postList = [
     preview:
       "Երևան և Մարտունի քաղաքների մի շարք հասցեների գազամատակարարումը սեպտեմբերի 16-ին կդադարեցվի",
     linkTitle: "CIVIC.AM",
+    quantity: 11,
   },
 ];
 export default postList;

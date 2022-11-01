@@ -31,16 +31,19 @@ const Comments = ({ img, stories, comment, name }) => {
   return (
     <div className="d-flex ps-2 mt-1">
       <div>
-        <div>
-          <div className={stories ? "stories" : "stories--no"}>
+        <div className="container-uses">
+          <div className={stories ? "stories-yes" : "stories-no"}>
             <img src={img} className="user-img" />
+            <div className={stories ? "online" : "username-online"}>
+              <div className="green-online"></div>
+            </div>
           </div>
         </div>
       </div>
       <div className="parent">
         <div className="onComment">
           <h6 className="user-name">{name}</h6>
-          <p>{comment}</p>
+          <p>{comment} ppp</p>
         </div>
         <div className="d-flex ps-4">
           <button

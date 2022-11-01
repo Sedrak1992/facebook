@@ -1,9 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 
 import UsersList from "../HomePage/RightSidebar/users/usersList";
 import Search from "../../icons/Search";
-console.log(UsersList, "fff");
 const Users = () => {
+  const [chatValue, setChatValue] = useState("");
+
+  const filterUsers = UsersList.filter((item) => {
+    return item.name.toLowerCase().includes(chatValue.toLowerCase());
+  });
   return (
     <div className="users">
       <div className="d-flex justify-content-between p-2 align-items-center">
@@ -26,22 +30,25 @@ const Users = () => {
         <input
           className="search--input messages-input-text"
           placeholder="поиск на Messages"
+          onChange={(event) => setChatValue(event.target.value)}
         />
       </div>
-      {UsersList.map((item) => (
-        <div
-          key={item.id}
-          className="d-flex messenger-container align-items-center"
-        >
-          <div className="messenger-box-images">
-            <img src={item.img} />
+      {filterUsers.map((item) => {
+        return (
+          <div
+            key={item.id}
+            className="d-flex messenger-container align-items-center"
+          >
+            <div className="messenger-box-images">
+              <img src={item.img} />
+            </div>
+            <div>
+              <h3>{item.name}</h3>
+              <h6>{item.comment}</h6>
+            </div>
           </div>
-          <div>
-            <h3>{item.name}</h3>
-            <h6>{item.comment}</h6>
-          </div>
-        </div>
-      ))}
+        );
+      })}
 
       <div className="messenger-footer d-flex align-items-center ">
         <div className="download-messenger ms-3"></div>
@@ -50,5 +57,4 @@ const Users = () => {
     </div>
   );
 };
-
 export default Users;

@@ -1,10 +1,10 @@
 .users {
   width: 350px;
-  height: 100vh;
+  height: calc(100vh - 56px);
   overflow: auto;
   padding-right: 7px;
   position: relative;
-  border-right: 2px #282828 solid;
+  border-right: 2px #efe5e5 solid;
   background: #fff;
   padding-bottom: 60px;
 }
@@ -109,11 +109,11 @@
   margin: 7px;
   cursor: pointer;
 }
-.light-background{
+.light-background {
   width: 45px;
   height: 45px;
 }
-.light-background:hover{
+.light-background:hover {
   background: rgb(198, 191, 191);
   border-radius: 50px;
 }

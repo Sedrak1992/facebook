@@ -5,19 +5,25 @@ import NewPost from "./NewPost";
 import RightSidebar from "./RightSidebar";
 
 import postList from "./Posts/postList/postListArr";
-import Posts from './Posts/index';
+import Posts from "./Posts/index";
 
 const Home = () => {
   const [posts, setPosts] = useState(postList);
+  const remove = (id) => {
+    setPosts(posts.filter((obj) => obj.id != id));
+    // setPosts((posts) =>
+    // posts.filter((index) => index !== e)
+    // );
+  };
   return (
-      <div className="components">
-        <LeftSidebar />
-        <div className="content-app">
-          <NewPost posts={posts} setPosts={setPosts} />
-          <Posts posts={posts} />
-        </div>
-        <RightSidebar />
+    <div className="components">
+      <LeftSidebar />
+      <div className="content-app">
+        <NewPost posts={posts} setPosts={setPosts} />
+        <Posts posts={posts} remove={remove} />
       </div>
+      <RightSidebar />
+    </div>
   );
 };
 

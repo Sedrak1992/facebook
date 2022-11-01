@@ -23,12 +23,16 @@ const Chat = () => {
           <SelectAFileGiv />
         </div>
         <div>
-          <input type="test" placeholder="Aa" />
+          <input
+            type="test"
+            placeholder="Aa"
+           
+          />
         </div>
         <div>
           <Smiley />
         </div>
-        <div className="light-background d-flex align-items-center justify-content-center" >
+        <div className="light-background d-flex align-items-center justify-content-center">
           <Like />
         </div>
       </div>
