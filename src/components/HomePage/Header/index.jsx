@@ -24,7 +24,7 @@ const Header = () => {
         </div>
         <div className="position-relative">
           <Search />
-          <input className="search--input" placeholder="поиск на Facebook" />
+          <input className="search--input" placeholder=" поиск на Facebook" />
         </div>
       </div>
       <div className="header--navigation">
@@ -57,7 +57,9 @@ const Header = () => {
           <Notification />
         </div>
         <div className="logo-avatar ms-2">
-          <img src="/facebook/img/269669879_3137994416483686_4685938482215500696_n.jpeg" />
+          <Link to="/MyMainPage">
+            <img src="/facebook/img/269669879_3137994416483686_4685938482215500696_n.jpeg" />
+          </Link>
         </div>
       </div>
     </header>

@@ -1,0 +1,130 @@
+.my-main-page {
+  width: 100%;
+  height: 100vh;
+  padding-top: 56px;
+  background: #ebefe9;
+}
+.my-content {
+  width: 950px;
+  margin: -20px auto;
+}
+.my-cover-image {
+  width: 950px;
+  height: 260px;
+  margin: 0 auto;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.my-cover-image > img {
+  width: 100%;
+}
+.edit-cover-photo:hover {
+  background: rgb(217, 210, 210);
+}
+.aa {
+  background-image: url(https://static.xx.fbcdn.net/rsrc.php/v3/ye/r/6JhZSMMOly2.png);
+  background-position: 0 -265px;
+  background-size: 21px 452px;
+  width: 16px;
+  height: 16px;
+  background-repeat: no-repeat;
+  display: inline-block;
+}
+.container-user {
+  width: 880px;
+  margin: 0 auto;
+}
+.container-user-image {
+  width: 168px;
+  height: 168px;
+  border-radius: 100px;
+  overflow: hidden;
+}
+.container-user-image > img {
+  width: 100%;
+}
+.user-pictures {
+  margin-right: -17px;
+  width: 35px;
+  height: 35px;
+}
+.user-pictures > img {
+  width: 100%;
+  border-radius: 50px;
+}
+.change-photo {
+  width: 36px;
+  height: 36px;
+  background: #e4e6eb;
+  border-radius: 50px;
+  position: absolute;
+  right: 8px;
+  bottom: 10px;
+}
+.change-photo-icons {
+  background-image: url(https://static.xx.fbcdn.net/rsrc.php/v3/ye/r/6JhZSMMOly2.png);
+  background-position: 0px -42px;
+  background-size: 21px 452px;
+  width: 20px;
+  height: 20px;
+  background-repeat: no-repeat;
+  display: inline-block;
+}
+.icons-blok {
+  position: relative;
+}
+.plus-png > img {
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
+}
+.plus-png {
+  display: inline-block;
+}
+.container-icons > div {
+  padding: 8px 14px;
+  background: red;
+
+  border-radius: 10px;
+  margin: 4px;
+}
+.edit-profile > img {
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
+}
+.blok-1 {
+}
+
+.blok-1 > ul > li {
+  list-style: none;
+}
+.blok-1 a {
+  border-radius: 10px;
+  font-weight: 900;
+  display: block;
+  padding: 10px;
+}
+.blok-1 a {
+  text-decoration: none;
+  color: #65676b;
+}
+.wrapper-blok {
+  border-top: 1px solid #282828;
+}
+li:hover {
+  border-bottom: 3px solid blue;
+}
+a:hover {
+  color: blue;
+  background: rgb(224, 220, 220);
+}
+.aaaa {
+  background: rgb(185, 180, 180);
+  padding: 10px 16px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.aaaa:hover {
+  background: rgb(112, 110, 110);
+}
