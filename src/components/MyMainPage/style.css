@@ -1,7 +1,6 @@
 .my-main-page {
   width: 100%;
-  height: 100vh;
-  padding-top: 56px;
+  padding: 56px 0 30px;
   background: #ebefe9;
 }
 .my-content {
@@ -93,9 +92,6 @@
   height: 16px;
   margin-right: 10px;
 }
-.blok-1 {
-}
-
 .blok-1 > ul > li {
   list-style: none;
 }
@@ -115,6 +111,9 @@
 li:hover {
   border-bottom: 3px solid blue;
 }
+li {
+  border-bottom: 3px solid transparent;
+}
 a:hover {
   color: blue;
   background: rgb(224, 220, 220);
@@ -127,4 +126,82 @@ a:hover {
 }
 .aaaa:hover {
   background: rgb(112, 110, 110);
+}
+.sssss {
+  background: #f0f2f5;
+}
+.my-container-is--a-leaf {
+  width: 950px;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+.my-container-box1 {
+  width: 400px;
+  background: #fff;
+  border-radius: 7px;
+}
+.my-container-box2 {
+  width: 520px;
+  background: #fff;
+  border-radius: 7px;
+}
+.edited-biography-bloc {
+  width: 100%;
+  border-radius: 7px;
+  background: #e4e6eb;
+}
+.my-container-box1 > h3 {
+  color: #050505;
+  font-weight: 900;
+  font-size: 23px;
+}
+.container-list-right {
+  background: red;
+}
+.anything-new-bloc {
+  border-bottom: 1px solid rgb(168, 158, 158);
+}
+.anything-new-bloc div img {
+  width: 100%;
+}
+.item {
+  border-radius: 50px;
+  width: 40px;
+  height: 40px;
+  overflow: hidden;
+}
+.item-input input {
+  width: 437px;
+  border: 0;
+  background: #dcd7d7;
+  border-radius: 30px;
+  padding: 5px 10px;
+}
+.live-img {
+  background-image: url(https://static.xx.fbcdn.net/rsrc.php/v3/yp/r/LT2b9_9nXPz.png);
+  background-position: 0px -58px;
+  background-size: 33px 575px;
+  width: 24px;
+  height: 24px;
+  background-repeat: no-repeat;
+  display: inline-block;
+}
+.photo-and-video {
+  background-image: url(https://static.xx.fbcdn.net/rsrc.php/v3/yp/r/LT2b9_9nXPz.png);
+  background-position: 0px -258px;
+  background-size: 33px 575px;
+  width: 24px;
+  height: 24px;
+  background-repeat: no-repeat;
+  display: inline-block;
+}
+.bloc-item:hover {
+  background: #cac0c0;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+.leaf-container {
+  border-radius: 7px;
+  background: #fff;
 }
