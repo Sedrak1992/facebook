@@ -2,12 +2,11 @@ import React from "react";
 import GlobeIcon from "../../icons/GlobeIcon";
 import ThreeDotsIcon from "../../icons/ThreeDotsIcon";
 
-
 import UsersList from "../HomePage/RightSidebar/users/usersList";
 import "./style.css";
 import ThreeDots from "./svg/ThreeDots";
 import YetSvg from "./svg/yetSvg";
-import PostAction from '../HomePage/Posts/PostAction/index';
+import PostAction from "../HomePage/Posts/PostAction/index";
 
 const MyMainPage = ({ post }) => {
   return (
@@ -29,7 +28,7 @@ const MyMainPage = ({ post }) => {
               </div>
 
               <div>
-                <h2>Sedrak Qocharyan</h2>
+                <h2>Sedrak Qocharyan iiiii </h2>
                 <h5>Друзья: 156</h5>
                 <div className="d-flex">
                   {UsersList.map((item, index) => (
