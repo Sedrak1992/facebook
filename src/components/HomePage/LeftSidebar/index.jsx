@@ -19,7 +19,7 @@ const LeftSidebar = () => {
           <img src="/facebook/img/269669879_3137994416483686_4685938482215500696_n.jpeg" />
         </div>
 
-        <h3 className="ms-3">Sedrak Qocharyan</h3>
+        <h3 className="ms-3">Sedrak Qocharyan - 777777 -</h3>
       </div>
       <div className="image-categories">
         <img
