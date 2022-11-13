@@ -8,6 +8,7 @@ import Home from "./components/HomePage/Home.jsx";
 
 import "./App.css";
 import MyMainPage from "./components/MyMainPage/index";
+import Posts from "./components/HomePage/Posts";
 
 function App() {
   return (

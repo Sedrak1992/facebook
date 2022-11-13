@@ -18,6 +18,7 @@ const Post = ({ post, remove }) => {
   };
   return (
     <div className="container-for-new-post">
+
       <div className="post-header">
         <div>
           <div className="d-flex align-items-center">
