@@ -28,6 +28,12 @@
   height: 47px;
   margin-right: 10px;
   border-radius: 50px;
+   overflow: hidden;
+}
+
+.post-logo > img {
+  width: 100%;
+ 
 }
 .three-dots-svg {
   display: flex;

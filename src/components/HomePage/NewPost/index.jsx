@@ -6,11 +6,11 @@ import Mood from "../../../icons/Mood";
 
 import "./style.css";
 
+const dateNow = new Date();
+export let dateAndHour = dateNow.toLocaleString();
+
 const NewPost = ({ posts, setPosts }) => {
   const [title, setTitle] = useState("");
-
-  const dateNow = new Date();
-  let dateAndHour = dateNow.toLocaleString();
 
   const handleKeyDownPost = (event) => {
     if (title.length > 0 && event.key === "Enter") {

@@ -11,9 +11,6 @@ const Home = () => {
   const [posts, setPosts] = useState(postList);
   const remove = (id) => {
     setPosts(posts.filter((obj) => obj.id != id));
-    // setPosts((posts) =>
-    // posts.filter((index) => index !== e)
-    // );
   };
   return (
     <div className="components">

@@ -30,7 +30,6 @@ const Header = () => {
       <div className="header--navigation">
         <div>
           <Home />
-          <h1>999</h1>
         </div>
         <div>
           <People />
