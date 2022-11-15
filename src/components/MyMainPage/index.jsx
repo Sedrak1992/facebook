@@ -1,13 +1,39 @@
-import React from "react";
+import React, { useState } from "react";
 
-import UsersList from "../HomePage/RightSidebar/users/usersList";
+import UsersList from "../../constants/users/usersList";
 import "./style.css";
 import ThreeDots from "./svg/ThreeDots";
 import YetSvg from "./svg/yetSvg";
-import profile from "./ProfileList/Profiles";
+import profile from "../../constants/ProfileList/Profiles";
 import Post from "../HomePage/Posts/Post";
+import { dateAndHour } from "../HomePage/NewPost";
 
 const MyMainPage = () => {
+  const [removePage, setRemovePage] = useState(profile);
+
+  const [title, setInputPage] = useState("");
+
+  const addPost = (event) => {
+    if (title.length > 0 && event.key === "Enter") {
+      setRemovePage([
+        {
+          title,
+          id: Date.now(),
+          name: "Sedrak Qocharyan",
+          imgLogo:
+            "/facebook/img/269669879_3137994416483686_4685938482215500696_n.jpeg",
+          data: dateAndHour,
+          quantity: 0,
+        },
+        ...removePage,
+      ]);
+      setInputPage("");
+    }
+  };
+  const remove = (id) => {
+    setRemovePage(removePage.filter((obj) => obj.id !== id));
+  };
+
   return (
     <div>
       <div className="my-main-page">
@@ -110,7 +136,13 @@ const MyMainPage = () => {
                   <img src="/facebook/img/269669879_3137994416483686_4685938482215500696_n.jpeg" />
                 </div>
                 <div className="item-input">
-                  <input type="test" placeholder="Что у вас нового" />
+                  <input
+                    type="test"
+                    placeholder="Что у вас нового"
+                    onChange={(event) => setInputPage(event.target.value)}
+                    onKeyDown={addPost}
+                    value={title}
+                  />
                 </div>
               </div>
               <div className="d-flex pt-2">
@@ -145,8 +177,8 @@ const MyMainPage = () => {
                 </div>
               </div>
             </div>
-            {profile.map((post) => (
-              <Post key={post.id} post={post} />
+            {removePage.map((post) => (
+              <Post key={post.id} post={post} remove={remove} />
             ))}
           </div>
         </div>

@@ -10,6 +10,8 @@ import "./App.css";
 import MyMainPage from "./components/MyMainPage/index";
 
 function App() {
+
+  
   return (
     <div className="App">
       <Header />

@@ -10,6 +10,7 @@ const dateNow = new Date();
 export let dateAndHour = dateNow.toLocaleString();
 
 const NewPost = ({ posts, setPosts }) => {
+  
   const [title, setTitle] = useState("");
 
   const handleKeyDownPost = (event) => {

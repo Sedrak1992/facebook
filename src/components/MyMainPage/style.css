@@ -141,7 +141,6 @@ a:hover {
   border-radius: 7px;
 }
 .my-container-box2 {
-  width: 520px;
   background: #fff;
   border-radius: 7px;
 }
@@ -170,7 +169,7 @@ a:hover {
   overflow: hidden;
 }
 .item-input input {
-  width: 437px;
+  width: 460px;
   border: 0;
   background: #dcd7d7;
   border-radius: 30px;

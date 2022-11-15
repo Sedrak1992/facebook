@@ -1,8 +1,7 @@
 const postList = [
   {
     id: 1,
-    imgLogo:
-      "https://scontent.fevn11-1.fna.fbcdn.net/v/t39.30808-1/285611919_385167300295261_6908542347217504437_n.jpg?stp=cp0_dst-jpg_p80x80&_nc_cat=106&ccb=1-7&_nc_sid=c6021c&_nc_ohc=l184wKsmJ1YAX_pOgia&tn=GgYuGzD15u9fM5An&_nc_ht=scontent.fevn11-1.fna&oh=00_AfAbv9RmLiwSTd-wcR3Y3ysefVBrYB3Kek6uG8tg_jFspg&oe=63654693",
+    imgLogo: "/facebook/img/Civic_img.jpeg",
     data: " 30 июнь 2021",
     body: "Civic.am",
     title:
@@ -16,9 +15,7 @@ const postList = [
   },
   {
     id: 2,
-    imgLogo:
-      "https://scontent.fevn11-1.fna.fbcdn.net/v/t39.30808-1/285611919_385167300295261_6908542347217504437_n.jpg?stp=cp0_dst-jpg_p80x80&_nc_cat=106&ccb=1-7&_nc_sid=c6021c&_nc_ohc=l184wKsmJ1YAX_pOgia&tn=GgYuGzD15u9fM5An&_nc_ht=scontent.fevn11-1.fna&oh=00_AfAbv9RmLiwSTd-wcR3Y3ysefVBrYB3Kek6uG8tg_jFspg&oe=63654693",
-
+    imgLogo: "/facebook/img/Civic_img.jpeg",
     data: "1 сентябрь 2021",
     body: "Civic.am",
     title: "Շիրակի մարզը միանում է «իԳործ» ծրագրին",
@@ -31,9 +28,7 @@ const postList = [
   },
   {
     id: 3,
-    imgLogo:
-      "https://scontent.fevn11-1.fna.fbcdn.net/v/t39.30808-1/285611919_385167300295261_6908542347217504437_n.jpg?stp=cp0_dst-jpg_p80x80&_nc_cat=106&ccb=1-7&_nc_sid=c6021c&_nc_ohc=l184wKsmJ1YAX_pOgia&tn=GgYuGzD15u9fM5An&_nc_ht=scontent.fevn11-1.fna&oh=00_AfAbv9RmLiwSTd-wcR3Y3ysefVBrYB3Kek6uG8tg_jFspg&oe=63654693",
-
+    imgLogo: "/facebook/img/Civic_img.jpeg",
     data: "2 сентябрь 2021",
     body: "Civic.am",
     title:
@@ -47,8 +42,7 @@ const postList = [
   },
   {
     id: 4,
-    imgLogo:
-      "https://scontent.fevn11-1.fna.fbcdn.net/v/t39.30808-1/285611919_385167300295261_6908542347217504437_n.jpg?stp=cp0_dst-jpg_p80x80&_nc_cat=106&ccb=1-7&_nc_sid=c6021c&_nc_ohc=l184wKsmJ1YAX_pOgia&tn=GgYuGzD15u9fM5An&_nc_ht=scontent.fevn11-1.fna&oh=00_AfAbv9RmLiwSTd-wcR3Y3ysefVBrYB3Kek6uG8tg_jFspg&oe=63654693",
+    imgLogo: "/facebook/img/Civic_img.jpeg",
     data: "15 сентябрь 2021 ",
     body: "Civic.am",
     title:
@@ -61,8 +55,7 @@ const postList = [
   },
   {
     id: 5,
-    imgLogo:
-      "https://scontent.fevn11-1.fna.fbcdn.net/v/t39.30808-1/285611919_385167300295261_6908542347217504437_n.jpg?stp=cp0_dst-jpg_p80x80&_nc_cat=106&ccb=1-7&_nc_sid=c6021c&_nc_ohc=l184wKsmJ1YAX_pOgia&tn=GgYuGzD15u9fM5An&_nc_ht=scontent.fevn11-1.fna&oh=00_AfAbv9RmLiwSTd-wcR3Y3ysefVBrYB3Kek6uG8tg_jFspg&oe=63654693",
+    imgLogo: "/facebook/img/Civic_img.jpeg",
     data: "15 сентябрь 2021 ",
     body: "Civic.am",
     title:

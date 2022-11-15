@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-import UsersList from "../HomePage/RightSidebar/users/usersList";
+import UsersList from "../../constants/users/usersList";
 import Search from "../../icons/Search";
 const Users = () => {
   const [chatValue, setChatValue] = useState("");
