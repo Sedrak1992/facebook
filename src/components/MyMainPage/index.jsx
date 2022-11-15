@@ -11,7 +11,7 @@ import { dateAndHour } from "../HomePage/NewPost";
 const MyMainPage = () => {
   const [removePage, setRemovePage] = useState(profile);
 
-  const [title, setInputPage] = useState("");
+  const [title, setTitle] = useState("");
 
   const addPost = (event) => {
     if (title.length > 0 && event.key === "Enter") {
@@ -27,7 +27,7 @@ const MyMainPage = () => {
         },
         ...removePage,
       ]);
-      setInputPage("");
+      setTitle("");
     }
   };
   const remove = (id) => {
@@ -139,7 +139,7 @@ const MyMainPage = () => {
                   <input
                     type="test"
                     placeholder="Что у вас нового"
-                    onChange={(event) => setInputPage(event.target.value)}
+                    onChange={(event) => setTitle(event.target.value)}
                     onKeyDown={addPost}
                     value={title}
                   />
