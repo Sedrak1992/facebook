@@ -137,7 +137,7 @@ const MyMainPage = () => {
                 <div className="item-input">
                   <input
                     type="test"
-                    placeholder="Что у вас нового"
+                    placeholder="Что у вас нового "
                     onChange={(event) => setTitle(event.target.value)}
                     onKeyDown={addPost}
                     value={title}
