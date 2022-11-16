@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Comments from "../Comments/index";
 import NewComment from "./NewComment/index";
-import commentsList from "./comments";
+import commentsList from "../../../../constants/comments";
 
 import "./style.css";
 

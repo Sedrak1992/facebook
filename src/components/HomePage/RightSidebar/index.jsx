@@ -4,7 +4,7 @@ import "./style.css";
 import NewRooms from "./svg/NewRooms";
 import Options from "./svg/Options";
 
-import usersList from "./users/usersList";
+import usersList from "../../../constants/usersList";
 
 const RightSidebar = () => {
   return (

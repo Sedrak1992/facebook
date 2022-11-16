@@ -141,7 +141,6 @@ a:hover {
   border-radius: 7px;
 }
 .my-container-box2 {
-  width: 520px;
   background: #fff;
   border-radius: 7px;
 }
@@ -156,7 +155,6 @@ a:hover {
   font-size: 23px;
 }
 .container-list-right {
-  background: red;
 }
 .anything-new-bloc {
   border-bottom: 1px solid rgb(168, 158, 158);
@@ -171,7 +169,7 @@ a:hover {
   overflow: hidden;
 }
 .item-input input {
-  width: 437px;
+  width: 460px;
   border: 0;
   background: #dcd7d7;
   border-radius: 30px;

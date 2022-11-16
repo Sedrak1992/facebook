@@ -18,11 +18,13 @@ const Post = ({ post, remove }) => {
   };
   return (
     <div className="container-for-new-post">
-
       <div className="post-header">
         <div>
           <div className="d-flex align-items-center">
-            <img className="post-logo" src={post.imgLogo} />
+            <div className="post-logo">
+              <img className="w-100" src={post.imgLogo} />
+            </div>
+
             <div>
               <div>
                 {post.body} {post.name}
@@ -49,7 +51,7 @@ const Post = ({ post, remove }) => {
         </div>
       )}
       <div className="new-post-news">
-        <h4 className="pt-1 pb-1">{post.linkTitle} </h4>
+        <h4 className="pt-2 pb-1">{post.linkTitle}</h4>
         <p className="new-post-news-title"> {post.preview}</p>
         <div className="d-flex align-items-center">
           <img
