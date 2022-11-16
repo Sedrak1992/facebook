@@ -1,4 +1,4 @@
-import { dateAndHour } from "../../components/HomePage/NewPost";
+import { dateAndHour } from "../components/HomePage/NewPost";
 
 const profile = [
   {

@@ -1,21 +1,20 @@
 import React, { useState } from "react";
 
-import UsersList from "../../constants/users/usersList";
+import UsersList from "../../constants/usersList";
 import "./style.css";
 import ThreeDots from "./svg/ThreeDots";
 import YetSvg from "./svg/yetSvg";
-import profile from "../../constants/ProfileList/Profiles";
+import profile from "../../constants/Profiles";
 import Post from "../HomePage/Posts/Post";
 import { dateAndHour } from "../HomePage/NewPost";
 
 const MyMainPage = () => {
-  const [removePage, setRemovePage] = useState(profile);
-
+  const [profileList, setProfileList] = useState(profile);
   const [title, setTitle] = useState("");
 
   const addPost = (event) => {
     if (title.length > 0 && event.key === "Enter") {
-      setRemovePage([
+      setProfileList([
         {
           title,
           id: Date.now(),
@@ -25,13 +24,13 @@ const MyMainPage = () => {
           data: dateAndHour,
           quantity: 0,
         },
-        ...removePage,
+        ...profileList,
       ]);
       setTitle("");
     }
   };
   const remove = (id) => {
-    setRemovePage(removePage.filter((obj) => obj.id !== id));
+    setProfileList(profileList.filter((obj) => obj.id !== id));
   };
 
   return (
@@ -177,7 +176,7 @@ const MyMainPage = () => {
                 </div>
               </div>
             </div>
-            {removePage.map((post) => (
+            {profileList.map((post) => (
               <Post key={post.id} post={post} remove={remove} />
             ))}
           </div>

@@ -5,7 +5,7 @@ import NewPost from "./NewPost";
 import RightSidebar from "./RightSidebar";
 
 import Posts from "./Posts/index";
-import postList from "../../constants/postList/postListArr";
+import postList from "../../constants/postListArr";
 
 const Home = () => {
   const [posts, setPosts] = useState(postList);
